@@ -46,13 +46,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onPostCreate(@Nullable Bundle outState) {
-        super.onPostCreate(outState);
-        String tempData = "Something you just typed";
-        outState.putString("data_key",tempData);
-    }
-
-    @Override
     protected void onStart() {
         super.onStart();
         Log.d(TAG,"onStart");
